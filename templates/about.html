@@ -1,0 +1,33 @@
+{% extends 'base.html' %} {% block nav %}
+<ul class="navbar-nav mr-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="/">Home</a>
+  </li>
+  <li class="nav-item active">
+    <a class="nav-link" href="/about">About</a>
+  </li>
+</ul>
+{% endblock nav %} {% block about %}
+<div class="container">
+  <div class="jumbotron mt-4">
+    <h2 class="display-6">Hello from Sayak!</h2>
+    <p class="lead">
+      This is a simple TODO application where users can add their todos and also
+      can delete or update them. It is built with Flask backend and Sqlite
+      database to perform CRUD operations.
+    </p>
+    <hr class="my-4" />
+    <p>To connect with me or to get the source code, follow me on LinkedIn</p>
+    <p class="lead">
+      <a
+        class="btn btn-primary btn-lg"
+        href="https://www.linkedin.com/in/sayaksaha10/"
+        target="_blank"
+        role="button"
+        >LinkedIn</a
+      >
+    </p>
+  </div>
+</div>
+
+{% endblock about %}
